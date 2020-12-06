@@ -1,0 +1,14 @@
+{
+  "name": "deliveryhobe",
+  "version": "1.0.0",
+  "description": "Landing page for deliveryhobe",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Asif",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
