@@ -17,13 +17,12 @@ $color-site-background: #282828;
 }
 
 html {
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
 }
 
 body {
   min-height: 100vh;
-  padding: 4.5rem 3rem 0 3rem;
   font-family: 'Inter', sans-serif;
   background-color: $color-site-background;
 }
