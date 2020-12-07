@@ -14,6 +14,21 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #282828; }
 
+.card-item {
+  height: 41rem; }
+  .card-item--1 {
+    background-color: greenyellow; }
+  .card-item--2 {
+    background-color: crimson; }
+  .card-item--3 {
+    background-color: blueviolet; }
+  .card-item--4 {
+    background-color: hotpink; }
+  .card-item--5 {
+    background-color: royalblue; }
+  .card-item--6 {
+    background-color: darkslategray; }
+
 .container {
   max-width: 168rem;
   padding: 4.5rem 3rem 0 3rem;
@@ -30,6 +45,6 @@ body {
     margin-left: 10rem; }
 
 .card-box {
-  background-color: crimson;
   display: grid;
-  grid-template-columns: repeat(6, minmax(20rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: 2.6rem; }

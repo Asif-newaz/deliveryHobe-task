@@ -1,0 +1,31 @@
+// Card
+.card-item {
+    height: 41rem;
+
+    &--1 {
+        background-color: greenyellow;
+    }
+
+    &--2 {
+        background-color: crimson;
+    }
+
+    &--3 {
+        background-color: blueviolet;
+    }
+
+    &--4 {
+        background-color: hotpink;
+    }
+
+    &--5 {
+        background-color: royalblue;
+    }
+
+    &--6 {
+        background-color: darkslategray;
+    }
+}
+
+.card {
+}
