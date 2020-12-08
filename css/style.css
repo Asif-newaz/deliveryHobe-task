@@ -54,6 +54,49 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.card__search {
+  flex: 0 0 65%;
+  display: flex;
+  justify-content: space-between; }
+  .card__search-input {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.7rem 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff; }
+    .card__search-input:focus {
+      outline: none; }
+  .card__search-button {
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.3rem .7rem 1.2rem;
+    background-color: #ffffff; }
+    .card__search-button img {
+      height: 1.5rem;
+      width: 1.5rem; }
+    .card__search-button:focus {
+      outline: none; }
+
+.card__sort-button {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  flex: 0 0 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .card__sort-button:focus {
+    outline: none; }
+  .card__sort-button-img-box img {
+    display: block; }
+  .card__sort-button-img-box--2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
 .container {
   max-width: 168rem;
   margin: auto;
