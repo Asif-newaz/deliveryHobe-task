@@ -1,31 +1,55 @@
 // Card
 .card-item {
     height: 41rem;
+    background-color: $color-card-background;
+    padding: 1.8rem 1.1rem;
+    border-radius: 1rem;
 
     &--1 {
-        background-color: greenyellow;
-    }
-
-    &--2 {
-        background-color: crimson;
-    }
-
-    &--3 {
-        background-color: blueviolet;
-    }
-
-    &--4 {
-        background-color: hotpink;
-    }
-
-    &--5 {
-        background-color: royalblue;
-    }
-
-    &--6 {
-        background-color: darkslategray;
+        // background-color: greenyellow;
     }
 }
 
 .card {
+    &__time {
+        margin-bottom: 1.2rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__day {
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-gray;
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $color-black;
+    }
+
+    &__task {
+        margin-bottom: 1.2rem;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $color-black;
+
+        &::after {
+            content: "";
+            display: block;
+            margin-top: 1.2rem;
+            height: 1px;
+            width: 100%;
+            background-color: $color-black;
+            opacity: 0.05;
+        }
+    }
+
+    &__search-box {
+        display: flex;
+        justify-content: space-between;
+    }
 }

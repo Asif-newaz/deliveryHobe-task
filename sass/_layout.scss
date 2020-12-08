@@ -1,5 +1,6 @@
 .container {
     max-width: 168rem;
+    margin: auto;
     padding: 4.5rem 3rem 0 3rem;
 
     display: grid;
@@ -20,6 +21,7 @@
 }
 
 .main-content {
+    margin-top: 3rem;
 }
 
 .card-box {
