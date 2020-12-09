@@ -55,24 +55,23 @@ body {
   justify-content: space-between; }
 
 .card__search {
-  flex: 0 0 65%;
+  flex: 0 0 82%;
   display: flex;
-  justify-content: space-between; }
+  border-radius: 4px;
+  background-color: #ffffff; }
   .card__search-input {
     font-family: inherit;
     font-size: 1.2rem;
     font-weight: 400;
     padding: 0.7rem 0;
     border: none;
-    border-radius: 4px;
-    background-color: #ffffff; }
+    background-color: transparent; }
     .card__search-input:focus {
       outline: none; }
   .card__search-button {
     border: none;
-    border-radius: 4px;
     padding: 0.7rem 1.3rem .7rem 1.2rem;
-    background-color: #ffffff; }
+    background-color: transparent; }
     .card__search-button img {
       height: 1.5rem;
       width: 1.5rem; }
@@ -82,6 +81,7 @@ body {
 .card__sort-button {
   border: none;
   border-radius: 4px;
+  padding: .9rem 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   flex: 0 0 15%;
@@ -94,8 +94,17 @@ body {
     display: block; }
   .card__sort-button-img-box--2 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .card__sort-button-img--2 {
+    margin-top: 2px; }
+
+.card__status {
+  margin-top: 1.2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #282828; }
 
 .container {
   max-width: 168rem;
