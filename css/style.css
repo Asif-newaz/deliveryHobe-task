@@ -21,6 +21,10 @@ body {
   opacity: 0.67; }
   .card-item--1 {
     background-color: #000000; }
+  .card-item--2 {
+    opacity: 100%; }
+  .card-item--7 {
+    background-color: #FFE33F; }
 
 .card__time {
   margin-bottom: 1.2rem;
@@ -188,7 +192,7 @@ body {
   margin: auto;
   padding: 4.5rem 0 0 3rem;
   display: grid;
-  grid-template-rows: 10.5rem min-content; }
+  grid-template-rows: repeat(2, min-content); }
 
 .header {
   background-color: goldenrod;
@@ -206,5 +210,6 @@ body {
 
 .card-box {
   display: grid;
-  grid-template-columns: repeat(6, minmax(25rem, 1fr));
-  grid-gap: 2.6rem; }
+  grid-template-columns: repeat(7, minmax(27rem, 1fr));
+  grid-gap: 2.6rem;
+  align-items: start; }

@@ -1,6 +1,5 @@
 // Card
 .card-item {
-    // height: 41rem;
     background-color: $color-card-background;
     padding: 1.8rem 1.1rem;
     border-radius: 1rem;
@@ -8,7 +7,14 @@
 
     &--1 {
         background-color: $color-black;
-        
+    }
+
+    &--2 {
+        opacity: 100%;
+    }
+
+    &--7 {
+        background-color: $color-yellow;
     }
 }
 
