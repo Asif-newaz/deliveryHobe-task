@@ -15,10 +15,12 @@ body {
   background-color: #282828; }
 
 .card-item {
-  height: 41rem;
   background-color: #EBECF0;
   padding: 1.8rem 1.1rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  opacity: 0.67; }
+  .card-item--1 {
+    background-color: #000000; }
 
 .card__time {
   margin-bottom: 1.2rem;
@@ -30,17 +32,23 @@ body {
   font-size: 1.4rem;
   text-transform: uppercase;
   color: #282828; }
+  .card__day--1 {
+    color: #FFE33F; }
 
 .card__date {
   font-weight: 400;
   font-size: 1.2rem;
   color: #000000; }
+  .card__date--2 {
+    color: #282828; }
 
 .card__task {
   margin-bottom: 1.2rem;
   font-weight: 400;
   font-size: 1rem;
   color: #000000; }
+  .card__task--1 {
+    color: #282828; }
   .card__task::after {
     content: "";
     display: block;
@@ -106,10 +114,79 @@ body {
   font-size: 1.2rem;
   color: #282828; }
 
+.card__workflows {
+  height: 10rem;
+  margin-top: 1.2rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 4px;
+  background-color: #ffffff; }
+  .card__workflows-top::after {
+    content: "";
+    display: block;
+    margin: 1rem 0;
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+    opacity: 5%; }
+  .card__workflows-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .card__workflows-top-left {
+    text-transform: capitalize;
+    letter-spacing: -0.08px;
+    line-height: 1.8rem; }
+  .card__workflows-top-heading {
+    font-weight: 700;
+    font-size: 1.2rem; }
+  .card__workflows-top-date {
+    font-weight: 400;
+    font-size: 1rem; }
+  .card__workflows-top-right {
+    height: 1.4rem;
+    width: 1.4rem; }
+  .card__workflows-top-img {
+    width: 100%; }
+  .card__workflows-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .card__workflows-bottom-text {
+      font-weight: 400;
+      letter-spacing: -0.08px;
+      text-align: right; }
+      .card__workflows-bottom-text--1 {
+        font-size: 1rem; }
+      .card__workflows-bottom-text--2 {
+        font-size: 1.2rem; }
+  .card__workflows-btn-primary:link, .card__workflows-btn-primary:visited {
+    display: inline-block;
+    padding: .4rem .8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #5FD855;
+    border-radius: 4px;
+    text-decoration: none; }
+  .card__workflows-btn-secondary:link, .card__workflows-btn-secondary:visited {
+    background-color: #E73948; }
+
+.card__cta-button {
+  display: block;
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: .7rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.2rem; }
+
 .container {
-  max-width: 168rem;
+  max-width: 186rem;
   margin: auto;
-  padding: 4.5rem 3rem 0 3rem;
+  padding: 4.5rem 0 0 3rem;
   display: grid;
   grid-template-rows: 10.5rem min-content; }
 
@@ -123,9 +200,11 @@ body {
     margin-left: 10rem; }
 
 .main-content {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  overflow: auto;
+  white-space: nowrap; }
 
 .card-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-columns: repeat(6, minmax(25rem, 1fr));
   grid-gap: 2.6rem; }
