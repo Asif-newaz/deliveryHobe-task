@@ -73,23 +73,23 @@
     &__search-box {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
     }
 
     &__search {
-        flex: 0 0 82%;
+        width: 80%;
         
         display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         border-radius: 4px;
         background-color: $color-white;
 
         &-input {
+            width: 80%;
             font-family: inherit;
             font-size: 1.2rem;
             font-weight: 400;
-            // opacity: 0.4;
-            padding: 0.7rem 0;
             border: none;
             
             background-color: transparent;
@@ -100,13 +100,14 @@
         }
 
         &-button {
+            width: 20%;
+            
             border: none;
-            padding: 0.7rem 1.3rem .7rem 1.2rem;
             background-color: transparent;
 
             img {
-                height: 1.5rem;
-                width: 1.5rem;
+                height: 1.4rem;
+                width: 1.4rem;
             }
 
             &:focus {
@@ -116,13 +117,13 @@
     }
 
     &__sort-button {
+        margin-left: 1rem;
+        width: 20%;
         border: none;
         border-radius: 4px;
         padding: .9rem 1px;
         box-shadow: 0 2px 4px rgba($color-black, .25);
         background-color: $color-white;
-
-        flex: 0 0 15%;
 
         display: flex;
         justify-content: center;
