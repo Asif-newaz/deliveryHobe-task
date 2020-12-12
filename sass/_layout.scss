@@ -2,10 +2,14 @@
 .container {
     max-width: 186rem;
     margin: auto;
-    padding: 4.4rem 0 0 3rem;
+    padding-top: 4.4rem;
 
     display: grid;
     grid-template-rows: repeat(2, min-content);
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+    }
 }
 
 // Header
@@ -18,9 +22,19 @@
     grid-template-rows: min-content;
     align-items: center;
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 85% 15%;
+    }
+
     &__nav {
         background-color: $color-nav;
         border-radius: 4px;
+        margin-left: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            border-radius: unset;
+            margin-left: 0;
+        }
     }
 
     &__logo {
@@ -28,11 +42,33 @@
         justify-content: flex-end;
         align-items: center;
 
-        padding-right: 10rem;
+        padding-right: 9rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding-right: 7rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding-right: 2rem;
+        }
 
         &-box {
             max-width: 13.4rem;
             max-height: 9.1rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                max-width: 12rem;
+                max-height: 8rem;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                max-width: 10rem;
+                max-height: 8rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                max-width: 8rem;
+            }
         }
 
         &-img {
@@ -48,6 +84,10 @@
     align-items: center;
 
     padding: 1.1rem 2.4rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 1rem 2rem;
+    }
 
     &__list {
         list-style: none;
@@ -69,6 +109,10 @@
             width: 1px;
             background-color: $color-black;
             opacity: 0.1;
+
+            @media only screen and (max-width: $bp-large) {
+                height: 7rem;
+            }
         }
     }
 
@@ -81,6 +125,11 @@
             max-width: 6rem;
             max-height: 6rem;
 
+            @media only screen and (max-width: $bp-large) {
+                max-width: 5rem;
+                max-height: 5rem;
+            }
+
             img {
                 width: 100%;
                 border-radius: 50%;
@@ -90,6 +139,14 @@
         &-details {
             padding: 0 3.4rem 0 1.8rem;
             color: $color-gray;
+
+            @media only screen and (max-width: $bp-largest) {
+                padding-right: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-largest) {
+                padding-left: 1.3rem;
+            }
         }
 
         &-heading {
@@ -97,12 +154,21 @@
             font-weight: 700;
             text-transform: capitalize;
             margin-bottom: 0.6rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1.2rem;
+                margin-bottom: 0.3rem;
+            }
         }
 
         &-title {
             font-size: 1.2rem;
             font-weight: 400;
             opacity: 0.5;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -113,20 +179,47 @@
 
         &--1 {
             padding: 0 1.9rem 0 2.5rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                padding: 0 1.5rem 0 2rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: 0 1.5rem;
+            }
         }
 
         &--2 {
             padding: 0 3.3rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                padding: 0 2rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: 0 1.5rem;
+            }
         }
 
         &--3 {
             padding: 0 4.5rem 0 3.3rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                padding: 0 2rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: 0 1.5rem;
+            }
         }
 
         &-details {
-
             &--modifier {
                 padding-right: 3.2rem;
+
+                @media only screen and (max-width: $bp-largest) {
+                    padding-right: 1.2rem;
+                }
             }
         }
 
@@ -134,7 +227,21 @@
             font-size: 2.4rem;
             font-weight: 700;
             color: $color-nav-heading;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                font-size: 1.8rem;
+                margin-bottom: 0.3rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.5rem;
+            }
+            
         }
 
         &-title {
@@ -143,6 +250,10 @@
             text-transform: capitalize;
             color: $color-black;
             opacity: 0.5;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1rem;
+            }
         }
 
         &-img {
@@ -164,9 +275,26 @@
 
         padding: 0 5.5rem 0 5rem;
 
+        @media only screen and (max-width: $bp-largest) {
+            padding: 0 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 0 2.7rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 0 2rem;
+        }
+
         &-img {
             max-width: 3.1rem;
             max-height: 3.2rem;
+
+            @media only screen and (max-width: $bp-large) {
+                max-width: 2.6rem;
+                max-height: 2.6rem;
+            }
 
             img {
                 width: 100%;
@@ -185,6 +313,19 @@
         font-weight: 700;
         text-transform: capitalize;
         color: $color-nav;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 1.4rem 5rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 1.2rem 4rem;
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 1.1rem 3.5rem;
+        }
     }
 }
 
@@ -201,4 +342,11 @@
     // grid-template-rows: repeat(2, minmax(100px, min-content));
     grid-gap: 2.6rem;
     align-items: start;
+
+    margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(7, minmax(26rem, 1fr));
+    }
+
 }
