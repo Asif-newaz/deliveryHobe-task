@@ -66,9 +66,51 @@
         opacity: 100%;
     }
 
+    &--4 {
+        position: relative;
+        transition: opacity .5s ease;
+    }
+
     &--7 {
         background-color: $color-yellow;
     }
+}
+
+.card-modifier {
+    transition: opacity 0.01s;
+
+    &--1 {
+        position: static;
+    }
+
+    &--2 {
+        opacity: 0;
+        position: absolute;
+        top: 1.8rem;
+        left: 1.1rem;
+        right: 1.1rem;
+        bottom: 1.8rem;
+    }
+}
+
+.card-item--4:hover {
+    opacity: 100%;
+    transform: scale(1.0001);
+}
+
+.card-item--4:hover .card-modifier--1 {
+    opacity: 0;
+    position: absolute;
+    top: 1.8rem;
+    left: 1.1rem;
+    right: 1.1rem;
+    bottom: 1.8rem;
+}
+
+.card-item--4:hover .card-modifier--2 {
+    opacity: 100%;
+    position: static;
+    z-index: 300;
 }
 
 .card {
@@ -222,6 +264,7 @@
         background-color: $color-white;
 
         &-top {
+            
             &::after {
                 content: "";
                 display: block;
