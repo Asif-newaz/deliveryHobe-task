@@ -209,7 +209,8 @@ body {
   margin-top: 1.2rem;
   padding: 1.2rem 1.6rem;
   border-radius: 4px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  position: relative; }
   .card__workflows--1 {
     cursor: pointer; }
   .card__workflows-top::after {
@@ -499,6 +500,8 @@ body {
     font-weight: 700;
     text-transform: capitalize;
     color: #fcfcfc; }
+    .navigation__btn:focus {
+      outline: none; }
     @media only screen and (max-width: 105em) {
       .navigation__btn {
         padding: 1.4rem 5rem; } }
@@ -556,3 +559,213 @@ body {
   .sort-button-modal-item--1 {
     font-weight: 700;
     font-size: 1.4rem; }
+
+.card__workflows-modal {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 1.2rem 1rem 1.9rem;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 100%;
+  z-index: 1000;
+  display: none; }
+
+.workflows-modal__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: -0.08px;
+  color: #161616;
+  line-height: 1.8rem; }
+  .workflows-modal__heading::after {
+    content: "";
+    display: block;
+    width: 21rem;
+    height: 1px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.4rem;
+    background-color: #000000;
+    opacity: 0.05; }
+
+.workflows-modal__header {
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+.workflows-modal__date {
+  font-weight: 400;
+  font-size: 1rem; }
+
+.workflows-modal__title {
+  margin-bottom: 1.5rem;
+  padding-left: 0.7rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: #282828; }
+
+.workflows-modal__grid-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 0.9rem;
+  grid-column-gap: 0.6rem; }
+
+.workflows-modal__hr {
+  content: "";
+  display: block;
+  width: 21rem;
+  height: 1px;
+  margin-top: 1.8rem;
+  margin-bottom: .8rem;
+  background-color: #000000;
+  opacity: 0.05; }
+
+.workflows-modal__status-btn {
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  color: #161616;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400; }
+  .workflows-modal__status-btn:focus {
+    outline: none; }
+  .workflows-modal__status-btn--1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    border: 1px solid #000000;
+    background-color: #FFE33F;
+    padding: 0.8rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.2rem; }
+  .workflows-modal__status-btn--2 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  .workflows-modal__status-btn--3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    padding-left: 1.2rem;
+    padding-right: 2rem; }
+  .workflows-modal__status-btn--4 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    padding-left: 1.4rem;
+    padding-right: 1.1rem; }
+  .workflows-modal__status-btn--5 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+    justify-content: flex-start;
+    padding-left: 1.6rem; }
+  .workflows-modal__status-btn--6 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 4;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+
+.workflows-modal__block-img-box--1 {
+  height: 1.4rem;
+  width: 1.4rem; }
+  .workflows-modal__block-img-box--1 img {
+    width: 100%;
+    height: 100%; }
+
+.workflows-modal__block-img-box--2 {
+  width: 1rem; }
+  .workflows-modal__block-img-box--2 img {
+    width: 100%;
+    height: 100%; }
+
+.workflows-modal__block-img-box--3 {
+  width: 1rem; }
+  .workflows-modal__block-img-box--3 img {
+    width: 100%; }
+
+.workflows-modal__block-img-box--4 {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 1.9rem; }
+  .workflows-modal__block-img-box--4 img {
+    width: 0.7rem; }
+
+.workflows-modal__grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3.5rem;
+  grid-row-gap: 1.4rem; }
+
+.workflows-modal__hours-estimation {
+  grid-column: 1 / 2; }
+
+.workflows-modal__hours-require {
+  grid-column: 2 / 3; }
+
+.workflows-modal__hours-btn {
+  grid-column: 1 / 3;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+  background-color: #292929;
+  color: #ffffff;
+  padding: .7rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize; }
+  .workflows-modal__hours-btn:focus {
+    outline: none; }
+
+.workflows-modal__selection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.workflows-modal__hours-estimation {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #282828;
+  margin-bottom: .7rem;
+  text-transform: capitalize; }
+
+.workflows-modal__hours-require {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #282828;
+  margin-bottom: .7rem;
+  text-transform: capitalize; }
+
+.workflows-modal__hours-option {
+  position: relative; }
+  .workflows-modal__hours-option::before {
+    display: block;
+    width: 8.4rem;
+    background-color: #ffffff;
+    border: 1px solid #acacac;
+    border-radius: 4px;
+    padding: .7rem 1.2rem;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #282828;
+    position: absolute; }
+  .workflows-modal__hours-option--1::before {
+    content: "5 Hrs"; }
+  .workflows-modal__hours-option--2::before {
+    content: "- Hrs"; }
+  .workflows-modal__hours-option::after {
+    content: url(../img/option-icon.svg);
+    position: absolute;
+    top: 20%;
+    left: 78%; }
+  .workflows-modal__hours-option select {
+    opacity: 0;
+    background-color: #ffffff;
+    border: 1px solid #acacac;
+    border-radius: 4px;
+    padding: .7rem 1.2rem; }

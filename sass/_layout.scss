@@ -318,6 +318,10 @@
         text-transform: capitalize;
         color: $color-nav;
 
+        &:focus {
+            outline: none;
+        }
+
         @media only screen and (max-width: $bp-largest) {
             padding: 1.4rem 5rem;
         }
