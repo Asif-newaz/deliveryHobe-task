@@ -315,7 +315,10 @@
                                     />
                                 </form>
 
-                                <button class="card__sort-button" id="sort-button">
+                                <button
+                                    class="card__sort-button"
+                                    id="sort-button"
+                                >
                                     <div
                                         class="card__sort-button-img-box card__sort-button-img-box--1"
                                     >
@@ -346,18 +349,45 @@
                                     </div>
                                 </button>
 
-                                <div class="card__sort-button-modal" id="sort-button-modal">
+                                <div
+                                    class="card__sort-button-modal"
+                                    id="sort-button-modal"
+                                >
                                     <div class="sort-button-modal">
                                         <ul class="sort-button-modal-list">
-                                            <li class="sort-button-modal-item sort-button-modal-item--1">Sort by:</li>
-                                            <li class="sort-button-modal-item sort-button-modal-item--2">Name</li>
-                                            <li class="sort-button-modal-item sort-button-modal-item--3">Deadline</li>
-                                            <li class="sort-button-modal-item sort-button-modal-item--4">Impact</li>
-                                            <li class="sort-button-modal-item sort-button-modal-item--5">Hours</li>
-                                            <li class="sort-button-modal-item sort-button-modal-item--6">Custom</li>
+                                            <li
+                                                class="sort-button-modal-item sort-button-modal-item--1"
+                                            >
+                                                Sort by:
+                                            </li>
+                                            <li
+                                                class="sort-button-modal-item sort-button-modal-item--2"
+                                            >
+                                                Name
+                                            </li>
+                                            <li
+                                                class="sort-button-modal-item sort-button-modal-item--3"
+                                            >
+                                                Deadline
+                                            </li>
+                                            <li
+                                                class="sort-button-modal-item sort-button-modal-item--4"
+                                            >
+                                                Impact
+                                            </li>
+                                            <li
+                                                class="sort-button-modal-item sort-button-modal-item--5"
+                                            >
+                                                Hours
+                                            </li>
+                                            <li
+                                                class="sort-button-modal-item sort-button-modal-item--6"
+                                            >
+                                                Custom
+                                            </li>
                                         </ul>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
 
                             <h3 class="card__status">Pending</h3>
@@ -403,6 +433,90 @@
                                             class="card__workflows-bottom-text card__workflows-bottom-text--2"
                                             >5 Hrs</span
                                         >
+                                    </div>
+                                </div>
+                                <div class="card__workflows-modal">
+                                    <div class="workflows-modal">
+                                        <div class="workflows-modal__heading">
+                                            <h4 class="workflows-modal__header">
+                                                Delegate - finalize workflows
+                                            </h4>
+                                            <p class="workflows-modal__date">
+                                                Due Date: 12th Nov
+                                            </p>
+                                        </div>
+
+                                        <h3 class="workflows-modal__title">Task status</h3>
+
+                                        <div class="workflows-modal__grid-top">
+                                            <button class="workflows-modal__status-btn workflows-modal__status-btn--1">
+                                                Pending
+                                            </button>
+                                            <button class="workflows-modal__status-btn workflows-modal__status-btn--2">
+                                                <div class="workflows-modal__block-img-box--1">
+                                                    <img src="img/hexagon.png" alt="block logo">
+                                                </div>
+                                                <p class="worflows-modal__block-text">Blocked</p>
+                                            </button>
+                                            <button class="workflows-modal__status-btn workflows-modal__status-btn--3">
+                                                <div class="workflows-modal__block-img-box--2">
+                                                    <img src="img/modal-btn-3.svg" alt="block logo">
+                                                </div>
+                                                <p class="worflows-modal__block-text">Rejected</p>
+                                            </button>
+                                            <button class="workflows-modal__status-btn workflows-modal__status-btn--4">
+                                                <div class="workflows-modal__block-img-box--3">
+                                                    <img src="img/modal-btn-4.svg" alt="block logo">
+                                                </div>
+                                                <p class="worflows-modal__block-text">Delegated</p>
+                                            </button>
+                                            <button class="workflows-modal__status-btn workflows-modal__status-btn--5">
+                                                <div class="workflows-modal__block-img-box--4">
+                                                    <img src="img/modal-btn-5.svg" alt="block logo">
+                                                    <img src="img/modal-btn-5.svg" alt="block logo">
+                                                </div>
+                                                <p class="worflows-modal__block-text">Moved to next week</p>
+                                            </button>
+                                            <button class="workflows-modal__status-btn workflows-modal__status-btn--6">
+                                                <div class="workflows-modal__block-img-box workflows-modal__block-img-box--5">
+                                                    <img src="img/modal-btn-6.svg" alt="block logo">
+                                                </div>
+                                                <p class="worflows-modal__block-text">Complete</p>
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="workflows-modal__hr"></div>
+
+                                        <div class="workflows-modal__grid-bottom">
+                                            <div class="workflows-modal__selection workflows-modal__selection--1">
+                                                <div class="workflows-modal__hours-estimation">
+                                                    <label for="find-us">Hours estimated</label>
+                                                </div>
+                                                <div class="workflows-modal__hours-option workflows-modal__hours-option--1">
+                                                    <select name="find-us" id="find-us">
+                                                        <option value="friends" selected>5 Hrs</option>
+                                                        <option value="search">4 Hrs</option>
+                                                        <option value="ad">3 Hrs</option>
+                                                        <option value="other">2 Hrs</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="workflows-modal__selection workflows-modal__selection--2">
+                                                <div class="workflows-modal__hours-require">
+                                                    <label class="workflows-modal__estimate-header">Hours required</label>
+                                                </div>
+                                                <div class="workflows-modal__hours-option workflows-modal__hours-option--2">
+                                                    <select name="find-us" id="find-us">
+                                                        <option value="friends" selected>- Hrs</option>
+                                                        <option value="search">+ Hrs</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <button class="workflows-modal__hours-btn">Edit task</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
