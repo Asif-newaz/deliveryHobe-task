@@ -61,7 +61,7 @@ body {
   background-color: #EBECF0;
   padding: 1.8rem 1.1rem;
   border-radius: 1rem;
-  opacity: 0.67; }
+  opacity: .4; }
   .card-item--1 {
     background-color: #000000; }
   .card-item--2 {
@@ -88,8 +88,7 @@ body {
   opacity: 0; }
 
 .card-item--4:hover {
-  opacity: 100%;
-  transform: scaleY(1.00001); }
+  opacity: 100%; }
 
 .card-item--4:hover .card-modifier--1 {
   opacity: 0;
@@ -335,6 +334,8 @@ body {
     .header__logo-img {
       width: 100%;
       height: 100%; }
+      .header__logo-img--2 {
+        display: none; }
 
 .navigation {
   display: flex;
@@ -771,16 +772,29 @@ body {
     border-radius: 4px;
     padding: 0.7rem 1.2rem; }
 
-.nav-search-modal {
+.modal-top-layer {
   display: none;
   position: fixed;
-  z-index: 100000;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(40, 40, 40, 0.67); }
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.nav-search-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0);
+  transition: all 5s ease; }
   .nav-search-modal__close {
     color: #ffffff;
     position: absolute;
@@ -819,7 +833,7 @@ body {
       outline: none; }
   .modal-search__input {
     border: none;
-    width: 34%;
+    width: 33%;
     display: block;
     padding-left: 2.9rem;
     color: #282828;
@@ -837,15 +851,14 @@ body {
       width: 1.2rem;
       margin-right: 5px;
       border-radius: 50%;
-      background-color: #E73948;
+      background-color: #282828;
+      opacity: 0.6;
       transform: scale(0.5);
       animation: grow 1.5s linear infinite; }
       .modal-search__loader-circle:nth-child(2) {
-        background-color: #282828;
-        animation-delay: .75s; }
+        animation-delay: 0.75s; }
       .modal-search__loader-circle:nth-child(3) {
-        background-color: #FFE33F;
-        animation-delay: .375s; }
+        animation-delay: 0.375s; }
 
 @keyframes grow {
   50% {
