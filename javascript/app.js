@@ -3,10 +3,12 @@ let modalTopLayer = document.getElementById("my-modal-top-layer");
 
 let navigationSearchBtn = document.getElementById("navigation-search");
 let navigationSearchModal = document.getElementById("my-nav-search-modal");
-let navigationSearchClose = document.getElementById("my-nav-search-modal__close");
+let navigationSearchClose = document.getElementById(
+    "my-nav-search-modal__close"
+);
 
-let sortButtonClick = document.getElementById("sort-button-modal");
 let mySortButton = document.getElementById("sort-button");
+let sortButtonClick = document.getElementById("sort-button-modal");
 let workflowsClick = document.getElementById("workflows-modal-click");
 let workflowsModal = document.getElementById("workflows-modal");
 
@@ -21,25 +23,27 @@ modalTopLayer.onclick = function () {
     workflowsModal.style.display = "none";
 };
 
-// Search modal
+// Search popup modal
 navigationSearchBtn.addEventListener("click", function () {
-    navigationSearchModal.style.cssText = "display: block; transform: scale(1);";
+    navigationSearchModal.style.cssText =
+        "opacity: 100%; visibility: visible; transform: scale(1);";
 
     window.onclick = function (event) {
         if (event.target === navigationSearchModal) {
-            navigationSearchModal.style.display = "none";
+            navigationSearchModal.style.cssText =
+                "opacity: 0; visibility: hidden;";
         }
     };
 });
 
 navigationSearchClose.onclick = function () {
-    navigationSearchModal.style.display = "none";
+    navigationSearchModal.style.cssText = "opacity: 100%; visibility: visible;";
 };
 
 // Sort button modal
 mySortButton.addEventListener("click", function () {
     modalTopLayer.style.display = "block";
-    sortButtonClick.style.display = "block";
+    sortButtonClick.style.cssText = "display: block; left: 80%;";
 
     window.onclick = function (event) {
         if (event.target === modalTopLayer) {
@@ -64,13 +68,14 @@ workflowsClick.addEventListener("click", function () {
 hoveredItem.addEventListener("mouseover", mouseOver);
 hoveredItem.addEventListener("mouseout", mouseOut);
 
-function mouseOver () {
-    hoverElementOne.style.cssText = "opacity: 0.4; transition: opacity .5s ease;";
+function mouseOver() {
+    hoverElementOne.style.cssText =
+        "opacity: 0.4; transition: opacity .5s ease;";
     normalStateLogo.style.display = "none";
     hoverStateLogo.style.display = "block";
 }
 
-function mouseOut () {
+function mouseOut() {
     hoverElementOne.style.opacity = "100%";
     normalStateLogo.style.display = "block";
     hoverStateLogo.style.display = "none";
