@@ -1,3 +1,128 @@
+// Modal popup layer
+.modal-top-layer {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba($color-black, 0.7);
+}
+
+// Search modal
+.nav-search-modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba($color-black, 0.7);
+    transform: scale(0);
+    transition: all 0.5s ease;
+
+    opacity: 0;
+    visibility: hidden;
+
+    &__close {
+        color: $color-white;
+        position: absolute;
+        right: 2rem;
+        top: 0.7rem;
+        font-size: 28px;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: $color-yellow;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100rem;
+    padding: 2rem 0 2rem 4rem;
+    background-color: $color-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        width: 3rem;
+        height: 3rem;
+
+        img {
+            width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__input {
+        border: none;
+        width: 33%;
+        display: block;
+        padding-left: 2.9rem;
+        color: $color-gray;
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        opacity: 0.6;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__loader {
+        display: flex;
+        transform-origin: bottom center;
+
+        &-circle {
+            height: 1.2rem;
+            width: 1.2rem;
+            margin-right: 5px;
+            background-color: $color-gray;
+            opacity: 0.6;
+            transform: scale(0.5);
+            animation: grow 1.5s linear infinite;
+
+            &:nth-child(2) {
+                animation-delay: 0.75s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 0.375s;
+            }
+
+            @keyframes grow {
+                50% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
 // Sort Button modal
 .card__sort-button-modal {
     display: none;
@@ -8,7 +133,7 @@
     border-radius: 4px;
 
     position: absolute;
-    left: 80%;
+    left: 0;
 
     opacity: 100%;
     z-index: 1000;
@@ -329,132 +454,6 @@
             border: 1px solid #acacac;
             border-radius: 4px;
             padding: 0.7rem 1.2rem;
-        }
-    }
-}
-
-// Modal top layer
-.modal-top-layer {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba($color-black, 0.7);
-}
-
-// Search modal
-.nav-search-modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba($color-black, 0.7);
-    transform: scale(0);
-    transition: all 5s ease;
-
-    &__close {
-        color: $color-white;
-        position: absolute;
-        right: 2rem;
-        top: 0.7rem;
-        font-size: 28px;
-        font-weight: bold;
-
-        &:hover,
-        &:focus {
-            color: $color-yellow;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    }
-}
-
-.modal-content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.modal-search {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    width: 100rem;
-    padding: 2rem 0 2rem 4rem;
-    background-color: $color-white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-
-    &__button {
-        border: none;
-        background-color: transparent;
-        width: 3rem;
-        height: 3rem;
-
-        img {
-            width: 100%;
-        }
-
-        &:focus {
-            outline: none;
-        }
-    }
-
-    &__input {
-        border: none;
-        width: 33%;
-        display: block;
-        padding-left: 2.9rem;
-        color: $color-gray;
-        font-size: 2.4rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        opacity: 0.6;
-
-        &:focus {
-            outline: none;
-        }
-    }
-
-    &__loader {
-        display: flex;
-        transform-origin: bottom center;
-
-        &-circle {
-            height: 1.2rem;
-            width: 1.2rem;
-            margin-right: 5px;
-            border-radius: 50%;
-            background-color: $color-gray;
-            opacity: 0.6;
-            transform: scale(0.5);
-            animation: grow 1.5s linear infinite;
-
-            &:nth-child(2) {
-                // background-color: $color-gray;
-                animation-delay: 0.75s;
-            }
-
-            &:nth-child(3) {
-                // background-color: $color-yellow;
-                animation-delay: 0.375s;
-            }
-
-            @keyframes grow {
-                50% {
-                    transform: scale(1);
-                }
-            }
         }
     }
 }

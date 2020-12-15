@@ -1,20 +1,18 @@
 // COLOR VARIABLES
-$color-primary: #5FD855;
-$color-secondary: #E73948;
+$color-primary: #5fd855;
+$color-secondary: #e73948;
+$color-yellow: #ffe33f;
 
-$color-yellow: #FFE33F;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-gray: #282828;
 $color-gray-light: #c4c4c4;
 
-$color-card-background: #EBECF0;
+$color-card-background: #ebecf0;
 $color-nav: #fcfcfc;
 $color-nav-heading: #1f1f1f;
 
-
-
-// SASS variables for breakpoint
+// Variables for breakpoint
 $bp-largest: 105em;
 $bp-large: 91.25em;
 $bp-medium: 78.125em;
@@ -22,23 +20,23 @@ $bp-medium: 78.125em;
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: 62.5%;
 
-  @media only screen and (max-width: $bp-large) {
-    font-size: 55%;
-}
+    @media only screen and (max-width: $bp-large) {
+        font-size: 55%;
+    }
 }
 
 body {
-  min-height: 100vh;
-  font-family: 'Inter', sans-serif;
-  background-color: $color-gray;
-  position: relative;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    background-color: $color-gray;
+    position: relative;
 }
