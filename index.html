@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <div class="modal-top-layer" id="my-modal-top-layer"></div>
         <div id="my-nav-search-modal" class="nav-search-modal">
             <span class="nav-search-modal__close" id="my-nav-search-modal__close">&times;</span>
             <div class="modal-content">
@@ -153,7 +154,12 @@
                         <img
                             src="img/FLO-Logo.svg"
                             alt="Site logo"
-                            class="header__logo-img"
+                            class="header__logo-img header__logo-img--1" id="normal-state"
+                        />
+                        <img
+                            src="img/FLO Logo-2.svg"
+                            alt="Site logo"
+                            class="header__logo-img header__logo-img--2" id="hover-state"
                         />
                     </div>
                 </div>
@@ -317,7 +323,7 @@
                     </div>
 
                     <!-- Item two -->
-                    <div class="card-item card-item--2">
+                    <div class="card-item card-item--2" id="hover-element-1">
                         <div class="card">
                             <div class="card__time">
                                 <p class="card__day">Sunday</p>
@@ -417,7 +423,7 @@
 
                             <h3 class="card__status">Pending</h3>
 
-                            <div class="card__workflows card__workflows--1">
+                            <div class="card__workflows card__workflows--1" id="workflows-modal-click">
                                 <div class="card__workflows-top">
                                     <div class="card__workflows-top-wrapper">
                                         <div class="card__workflows-top-left">
@@ -460,7 +466,7 @@
                                         >
                                     </div>
                                 </div>
-                                <div class="card__workflows-modal">
+                                <div class="card__workflows-modal" id="workflows-modal">
                                     <div class="workflows-modal">
                                         <div class="workflows-modal__heading">
                                             <h4 class="workflows-modal__header">
@@ -842,7 +848,7 @@
                     </div>
 
                     <!-- Item four -->
-                    <div class="card-item card-item--4">
+                    <div class="card-item card-item--4" id="hover-item">
                         <!-- Modifier one -->
                         <div class="card card-modifier card-modifier--1">
                             <div class="card__time">
