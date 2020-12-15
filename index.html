@@ -13,6 +13,30 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <div id="my-nav-search-modal" class="nav-search-modal">
+            <span class="nav-search-modal__close" id="my-nav-search-modal__close">&times;</span>
+            <div class="modal-content">
+                <form action="#" class="modal-search">
+                    <button class="modal-search__button">
+                        <img
+                            src="img/magnifying-glass.svg"
+                            alt="search button"
+                        />
+                    </button>
+                    <input
+                        type="text"
+                        class="modal-search__input"
+                        placeholder="JavaScript skill is Loading"
+                    />
+                    <div class="modal-search__loader">
+                        <div class="modal-search__loader-circle"></div>
+                        <div class="modal-search__loader-circle"></div>
+                        <div class="modal-search__loader-circle"></div>
+                      </div>
+                </form>
+            </div>
+          </div>
+
         <div class="float-box">
             <div class="float-button">
                 <button class="float-button__left float-button__utility">
@@ -24,6 +48,7 @@
             </div>
             <p class="float-text">Tip of the hour : Ctrl + Space = Search</p>
         </div>
+
         <div class="container">
             <header class="header">
                 <div class="header__nav">
@@ -106,7 +131,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="navigation__item navigation__item--5">
+                            <li class="navigation__item navigation__item--5" id="navigation-search">
                                 <div class="navigation__search">
                                     <div class="navigation__search-img">
                                         <img

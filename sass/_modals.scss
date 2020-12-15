@@ -109,14 +109,14 @@
     }
 
     &__hr {
-            content: "";
-            display: block;
-            width: 21rem;
-            height: 1px;
-            margin-top: 1.8rem;
-            margin-bottom: .8rem;
-            background-color: $color-black;
-            opacity: 0.05;
+        content: "";
+        display: block;
+        width: 21rem;
+        height: 1px;
+        margin-top: 1.8rem;
+        margin-bottom: 0.8rem;
+        background-color: $color-black;
+        opacity: 0.05;
     }
 
     &__status-btn {
@@ -227,7 +227,6 @@
         }
 
         &--5 {
-
             img {
             }
         }
@@ -256,7 +255,7 @@
         box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
         background-color: #292929;
         color: $color-white;
-        padding: .7rem 0;
+        padding: 0.7rem 0;
         font-size: 1.2rem;
         font-weight: 700;
         text-transform: capitalize;
@@ -264,7 +263,6 @@
         &:focus {
             outline: none;
         }
-
     }
 
     &__selection {
@@ -277,7 +275,7 @@
         font-size: 1rem;
         font-weight: 700;
         color: $color-gray;
-        margin-bottom: .7rem;
+        margin-bottom: 0.7rem;
         text-transform: capitalize;
     }
 
@@ -285,7 +283,7 @@
         font-size: 1rem;
         font-weight: 700;
         color: $color-gray;
-        margin-bottom: .7rem;
+        margin-bottom: 0.7rem;
         text-transform: capitalize;
     }
 
@@ -298,7 +296,7 @@
             background-color: $color-white;
             border: 1px solid #acacac;
             border-radius: 4px;
-            padding: .7rem 1.2rem ;
+            padding: 0.7rem 1.2rem;
             top: 0;
             left: 0;
             font-size: 1.2rem;
@@ -330,7 +328,117 @@
             background-color: $color-white;
             border: 1px solid #acacac;
             border-radius: 4px;
-            padding: .7rem 1.2rem ;
+            padding: 0.7rem 1.2rem;
+        }
+    }
+}
+
+// Search modal
+.nav-search-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba($color-gray, 0.67);
+
+    &__close {
+        color: $color-white;
+        position: absolute;
+        right: 2rem;
+        top: 0.7rem;
+        font-size: 28px;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: $color-yellow;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100rem;
+    padding: 2rem 0 2rem 4rem;
+    background-color: $color-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        width: 3rem;
+        height: 3rem;
+
+        img {
+            width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__input {
+        border: none;
+        width: 34%;
+        display: block;
+        padding-left: 2.9rem;
+        color: $color-gray;
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        opacity: 0.6;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__loader {
+        display: flex;
+        transform-origin: bottom center;
+
+        &-circle {
+            height: 1.2rem;
+            width: 1.2rem;
+            margin-right: 5px;
+            border-radius: 50%;
+            background-color: $color-secondary;
+            transform: scale(.5);
+            animation: grow 1.5s linear infinite;
+
+            &:nth-child(2) {
+                background-color: $color-gray;
+                animation-delay: .75s;
+            }
+
+            &:nth-child(3) {
+                background-color: $color-yellow;
+                animation-delay: .375s;
+            }
+
+            @keyframes grow {
+                50% {
+                    transform: scale(1);
+                }
+            }
         }
     }
 }
