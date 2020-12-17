@@ -12,8 +12,14 @@ let sortButtonClick = document.getElementById("sort-button-modal");
 let workflowsClick = document.getElementById("workflows-modal-click");
 let workflowsModal = document.getElementById("workflows-modal");
 
-let hoveredItem = document.getElementById("hover-item");
-let hoverElementOne = document.getElementById("hover-element-1");
+let hoveredItemOne = document.getElementById("hover-item-1");
+let hoveredItemTwo = document.getElementById("hover-item-2");
+let hoveredItemThree = document.getElementById("hover-item-3");
+let hoveredItemFour = document.getElementById("hover-item-4");
+let hoveredItemFive = document.getElementById("hover-item-5");
+let hoveredItemSix = document.getElementById("hover-item-6");
+
+let hoverElementCard = document.getElementById("hover-element-card");
 let normalStateLogo = document.getElementById("normal-state");
 let hoverStateLogo = document.getElementById("hover-state");
 
@@ -65,18 +71,33 @@ workflowsClick.addEventListener("click", function () {
 });
 
 // Hover effect
-hoveredItem.addEventListener("mouseover", mouseOver);
-hoveredItem.addEventListener("mouseout", mouseOut);
+hoveredItemOne.addEventListener("mouseover", mouseOver);
+hoveredItemOne.addEventListener("mouseout", mouseOut);
+
+hoveredItemTwo.addEventListener("mouseover", mouseOver);
+hoveredItemTwo.addEventListener("mouseout", mouseOut);
+
+hoveredItemThree.addEventListener("mouseover", mouseOver);
+hoveredItemThree.addEventListener("mouseout", mouseOut);
+
+hoveredItemFour.addEventListener("mouseover", mouseOver);
+hoveredItemFour.addEventListener("mouseout", mouseOut);
+
+hoveredItemFive.addEventListener("mouseover", mouseOver);
+hoveredItemFive.addEventListener("mouseout", mouseOut);
+
+hoveredItemSix.addEventListener("mouseover", mouseOver);
+hoveredItemSix.addEventListener("mouseout", mouseOut);
 
 function mouseOver() {
-    hoverElementOne.style.cssText =
+    hoverElementCard.style.cssText =
         "opacity: 0.4; transition: opacity .5s ease;";
     normalStateLogo.style.display = "none";
     hoverStateLogo.style.display = "block";
 }
 
 function mouseOut() {
-    hoverElementOne.style.opacity = "100%";
+    hoverElementCard.style.opacity = "100%";
     normalStateLogo.style.display = "block";
     hoverStateLogo.style.display = "none";
 }
