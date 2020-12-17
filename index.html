@@ -176,8 +176,11 @@
 
             <main class="main-content">
                 <div class="card-box">
-                    <!-- Item one -->
-                    <div class="card-item card-item--1">
+                    <!-- Card one -->
+                    <div
+                        class="card-item card-item--1 card-illumination"
+                        id="hover-item-1"
+                    >
                         <div class="card">
                             <div class="card__time">
                                 <p class="card__day card__day--1">Saturday</p>
@@ -327,8 +330,8 @@
                         </div>
                     </div>
 
-                    <!-- Item two -->
-                    <div class="card-item card-item--2" id="hover-element-1">
+                    <!-- Card two -->
+                    <div class="card-item card-item--2" id="hover-element-card">
                         <div class="card">
                             <div class="card__time">
                                 <p class="card__day">Sunday</p>
@@ -809,9 +812,13 @@
                         </div>
                     </div>
 
-                    <!-- Item three -->
-                    <div class="card-item card-item--3">
-                        <div class="card">
+                    <!-- Card three -->
+                    <div
+                        class="card-item card-item--3 card-illumination"
+                        id="hover-item-2"
+                    >
+                        <!-- Modifier one -->
+                        <div class="card card-modifier card-modifier--1">
                             <div class="card__time">
                                 <p class="card__day">Monday</p>
                                 <p class="card__date">17th Nov</p>
@@ -958,10 +965,317 @@
                                 + Add tasks
                             </button>
                         </div>
+
+                        <!-- Modifier two -->
+                        <div class="card card-modifier card-modifier--2">
+                            <div class="card__time">
+                                <p class="card__day">Monday</p>
+                                <p class="card__date">17th Nov</p>
+                            </div>
+                            <p class="card__task">Suggested No. of Tasks = 3</p>
+
+                            <div class="card__search-box">
+                                <form action="#" class="card__search">
+                                    <button class="card__search-button">
+                                        <img
+                                            src="img/magnifying-glass.svg"
+                                            alt="search button"
+                                        />
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="card__search-input"
+                                        placeholder="search tasks"
+                                    />
+                                </form>
+
+                                <button class="card__sort-button">
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--1"
+                                    >
+                                        <img
+                                            src="img/vector-a.svg"
+                                            alt="vector-a"
+                                            class="card__sort-button-img card__sort-button-img--1"
+                                        /><img
+                                            src="img/vector-z.svg"
+                                            alt="vector-z"
+                                            class="card__sort-button-img card__sort-button-img--2"
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--2"
+                                    >
+                                        <img
+                                            src="img/vector-1.svg"
+                                            alt="vector-1"
+                                            class="card__sort-button-img"
+                                        />
+                                        <img
+                                            src="img/vector.svg"
+                                            alt="vector"
+                                            class="card__sort-button-img"
+                                        />
+                                    </div>
+                                </button>
+                            </div>
+
+                            <h3 class="card__status">Pending</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Delegate - Finalize Workflows
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 15th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/hexagon.svg"
+                                                alt="task delegated icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-secondary"
+                                            >Low Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="card__status">Blocked</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Finalize Workflows for CS
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 12th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/task-blocked.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="card__cta-button">
+                                + Add tasks
+                            </button>
+                        </div>
+
+                        <!-- Modifier three -->
+                        <div class="card card-modifier card-modifier--3">
+                            <div class="card__time">
+                                <p class="card__day">Monday</p>
+                                <p class="card__date">17th Nov</p>
+                            </div>
+                            <p class="card__task">Suggested No. of Tasks = 3</p>
+
+                            <div class="card__search-box">
+                                <form action="#" class="card__search">
+                                    <button class="card__search-button">
+                                        <img
+                                            src="img/magnifying-glass.svg"
+                                            alt="search button"
+                                        />
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="card__search-input"
+                                        placeholder="search tasks"
+                                    />
+                                </form>
+
+                                <button class="card__sort-button">
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--1"
+                                    >
+                                        <img
+                                            src="img/vector-a.svg"
+                                            alt="vector-a"
+                                            class="card__sort-button-img card__sort-button-img--1"
+                                        /><img
+                                            src="img/vector-z.svg"
+                                            alt="vector-z"
+                                            class="card__sort-button-img card__sort-button-img--2"
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--2"
+                                    >
+                                        <img
+                                            src="img/vector-1.svg"
+                                            alt="vector-1"
+                                            class="card__sort-button-img"
+                                        />
+                                        <img
+                                            src="img/vector.svg"
+                                            alt="vector"
+                                            class="card__sort-button-img"
+                                        />
+                                    </div>
+                                </button>
+                            </div>
+
+                            <h3 class="card__status">Pending</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Finalize Workflows for CS
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 12th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/task-blocked.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="card__status">Blocked</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Delegate - Finalize Workflows
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 15th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/hexagon.svg"
+                                                alt="task delegated icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-secondary"
+                                            >Low Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="card__cta-button">
+                                + Add tasks
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- Item four -->
-                    <div class="card-item card-item--4" id="hover-item">
+                    <!-- Card four -->
+                    <div
+                        class="card-item card-item--4 card-illumination"
+                        id="hover-item-3"
+                    >
                         <!-- Modifier one -->
                         <div class="card card-modifier card-modifier--1">
                             <div class="card__time">
@@ -1416,9 +1730,13 @@
                         </div>
                     </div>
 
-                    <!-- Item five -->
-                    <div class="card-item card-item--5">
-                        <div class="card">
+                    <!-- Card five -->
+                    <div
+                        class="card-item card-item--5 card-illumination"
+                        id="hover-item-4"
+                    >
+                        <!-- Modifier one -->
+                        <div class="card card-modifier card-modifier--1">
                             <div class="card__time">
                                 <p class="card__day">Wednesday</p>
                                 <p class="card__date">19th Nov</p>
@@ -1565,11 +1883,319 @@
                                 + Add tasks
                             </button>
                         </div>
+
+                        <!-- Modifier two -->
+                        <div class="card card-modifier card-modifier--2">
+                            <div class="card__time">
+                                <p class="card__day">Wednesday</p>
+                                <p class="card__date">19th Nov</p>
+                            </div>
+                            <p class="card__task">Suggested No. of Tasks = 3</p>
+
+                            <div class="card__search-box">
+                                <form action="#" class="card__search">
+                                    <button class="card__search-button">
+                                        <img
+                                            src="img/magnifying-glass.svg"
+                                            alt="search button"
+                                        />
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="card__search-input"
+                                        placeholder="search tasks"
+                                    />
+                                </form>
+
+                                <button class="card__sort-button">
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--1"
+                                    >
+                                        <img
+                                            src="img/vector-a.svg"
+                                            alt="vector-a"
+                                            class="card__sort-button-img card__sort-button-img--1"
+                                        /><img
+                                            src="img/vector-z.svg"
+                                            alt="vector-z"
+                                            class="card__sort-button-img card__sort-button-img--2"
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--2"
+                                    >
+                                        <img
+                                            src="img/vector-1.svg"
+                                            alt="vector-1"
+                                            class="card__sort-button-img"
+                                        />
+                                        <img
+                                            src="img/vector.svg"
+                                            alt="vector"
+                                            class="card__sort-button-img"
+                                        />
+                                    </div>
+                                </button>
+                            </div>
+
+                            <h3 class="card__status">Pending</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Delegate - Finalize Workflows
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 15th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/hexagon.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-secondary"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="card__status">Blocked</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Finalize Workflows for CS
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 12th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/task-blocked.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-primary--1"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="card__cta-button">
+                                + Add tasks
+                            </button>
+                        </div>
+
+                        <!-- Modifier three -->
+                        <div class="card card-modifier card-modifier--3">
+                            <div class="card__time">
+                                <p class="card__day">Wednesday</p>
+                                <p class="card__date">19th Nov</p>
+                            </div>
+                            <p class="card__task">Suggested No. of Tasks = 3</p>
+
+                            <div class="card__search-box">
+                                <form action="#" class="card__search">
+                                    <button class="card__search-button">
+                                        <img
+                                            src="img/magnifying-glass.svg"
+                                            alt="search button"
+                                        />
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="card__search-input"
+                                        placeholder="search tasks"
+                                    />
+                                </form>
+
+                                <button class="card__sort-button">
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--1"
+                                    >
+                                        <img
+                                            src="img/vector-a.svg"
+                                            alt="vector-a"
+                                            class="card__sort-button-img card__sort-button-img--1"
+                                        /><img
+                                            src="img/vector-z.svg"
+                                            alt="vector-z"
+                                            class="card__sort-button-img card__sort-button-img--2"
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--2"
+                                    >
+                                        <img
+                                            src="img/vector-1.svg"
+                                            alt="vector-1"
+                                            class="card__sort-button-img"
+                                        />
+                                        <img
+                                            src="img/vector.svg"
+                                            alt="vector"
+                                            class="card__sort-button-img"
+                                        />
+                                    </div>
+                                </button>
+                            </div>
+
+                            <h3 class="card__status">Pending</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Delegate - Finalize Workflows
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 15th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/hexagon.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-secondary"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="card__status">Blocked</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Finalize Workflows for CS
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 12th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/task-blocked.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-primary--1"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="card__cta-button">
+                                + Add tasks
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- Item six -->
-                    <div class="card-item card-item--6">
-                        <div class="card">
+                    <!-- Card six -->
+                    <div
+                        class="card-item card-item--6 card-illumination"
+                        id="hover-item-5"
+                    >
+                        <!-- Modifier one -->
+                        <div class="card card-modifier card-modifier--1">
                             <div class="card__time">
                                 <p class="card__day">Thursday</p>
                                 <p class="card__date">20th Nov</p>
@@ -1716,10 +2342,317 @@
                                 + Add tasks
                             </button>
                         </div>
+
+                        <!-- Modifier two -->
+                        <div class="card card-modifier card-modifier--2">
+                            <div class="card__time">
+                                <p class="card__day">Thursday</p>
+                                <p class="card__date">20th Nov</p>
+                            </div>
+                            <p class="card__task">Suggested No. of Tasks = 5</p>
+
+                            <div class="card__search-box">
+                                <form action="#" class="card__search">
+                                    <button class="card__search-button">
+                                        <img
+                                            src="img/magnifying-glass.svg"
+                                            alt="search button"
+                                        />
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="card__search-input"
+                                        placeholder="search tasks"
+                                    />
+                                </form>
+
+                                <button class="card__sort-button">
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--1"
+                                    >
+                                        <img
+                                            src="img/vector-a.svg"
+                                            alt="vector-a"
+                                            class="card__sort-button-img card__sort-button-img--1"
+                                        /><img
+                                            src="img/vector-z.svg"
+                                            alt="vector-z"
+                                            class="card__sort-button-img card__sort-button-img--2"
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--2"
+                                    >
+                                        <img
+                                            src="img/vector-1.svg"
+                                            alt="vector-1"
+                                            class="card__sort-button-img"
+                                        />
+                                        <img
+                                            src="img/vector.svg"
+                                            alt="vector"
+                                            class="card__sort-button-img"
+                                        />
+                                    </div>
+                                </button>
+                            </div>
+
+                            <h3 class="card__status">Pending</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Delegate - Finalize Workflows
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 15th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/hexagon.svg"
+                                                alt="task delegated icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-secondary"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="card__status">Blocked</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Finalize Workflows for CS
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 12th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/task-blocked.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-primary--1"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="card__cta-button">
+                                + Add tasks
+                            </button>
+                        </div>
+
+                        <!-- Modifier three -->
+                        <div class="card card-modifier card-modifier--3">
+                            <div class="card__time">
+                                <p class="card__day">Thursday</p>
+                                <p class="card__date">20th Nov</p>
+                            </div>
+                            <p class="card__task">Suggested No. of Tasks = 5</p>
+
+                            <div class="card__search-box">
+                                <form action="#" class="card__search">
+                                    <button class="card__search-button">
+                                        <img
+                                            src="img/magnifying-glass.svg"
+                                            alt="search button"
+                                        />
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="card__search-input"
+                                        placeholder="search tasks"
+                                    />
+                                </form>
+
+                                <button class="card__sort-button">
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--1"
+                                    >
+                                        <img
+                                            src="img/vector-a.svg"
+                                            alt="vector-a"
+                                            class="card__sort-button-img card__sort-button-img--1"
+                                        /><img
+                                            src="img/vector-z.svg"
+                                            alt="vector-z"
+                                            class="card__sort-button-img card__sort-button-img--2"
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="card__sort-button-img-box card__sort-button-img-box--2"
+                                    >
+                                        <img
+                                            src="img/vector-1.svg"
+                                            alt="vector-1"
+                                            class="card__sort-button-img"
+                                        />
+                                        <img
+                                            src="img/vector.svg"
+                                            alt="vector"
+                                            class="card__sort-button-img"
+                                        />
+                                    </div>
+                                </button>
+                            </div>
+
+                            <h3 class="card__status">Pending</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Delegate - Finalize Workflows
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 15th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/hexagon.svg"
+                                                alt="task delegated icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-secondary"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="card__status">Blocked</h3>
+
+                            <div class="card__workflows">
+                                <div class="card__workflows-top">
+                                    <div class="card__workflows-top-wrapper">
+                                        <div class="card__workflows-top-left">
+                                            <h3
+                                                class="card__workflows-top-heading"
+                                            >
+                                                Finalize Workflows for CS
+                                            </h3>
+                                            <p class="card__workflows-top-date">
+                                                Due Date: 12th Nov
+                                            </p>
+                                        </div>
+                                        <div class="card__workflows-top-right">
+                                            <img
+                                                src="img/task-blocked.svg"
+                                                alt="hexagon icon"
+                                                class="card__workflows-top-img"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card__workflows-bottom">
+                                    <div class="card__workflows-bottom-left">
+                                        <a
+                                            href="#"
+                                            class="card__workflows-btn-primary card__workflows-btn-primary--1"
+                                            >High Impact</a
+                                        >
+                                    </div>
+                                    <div class="card__workflows-bottom-right">
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--1"
+                                            >est.</span
+                                        >
+                                        <span
+                                            class="card__workflows-bottom-text card__workflows-bottom-text--2"
+                                            >5 Hrs</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="card__cta-button">
+                                + Add tasks
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Card seven -->
-                    <div class="card-item card-item--7">
+                    <div
+                        class="card-item card-item--7 card-illumination"
+                        id="hover-item-6"
+                    >
                         <div class="card">
                             <div class="card__time">
                                 <p class="card__day">Shifted to next week</p>
