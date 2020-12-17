@@ -60,7 +60,9 @@ body {
   background-color: #ebecf0;
   padding: 1.8rem 1.1rem;
   border-radius: 1rem;
-  opacity: 0.4; }
+  opacity: 0.4;
+  position: relative;
+  transition: opacity 0.5s ease; }
   .card-item--1 {
     background-color: #000000; }
   .card-item--2 {
@@ -75,21 +77,21 @@ body {
   position: static; }
 
 .card-modifier--2 {
-  opacity: 0;
   position: absolute;
   top: 1.8rem;
   left: 1.1rem;
   right: 1.1rem;
-  bottom: 1.8rem; }
+  bottom: 1.8rem;
+  opacity: 0; }
 
 .card-modifier--3 {
   display: none;
   opacity: 0; }
 
-.card-item--4:hover {
+.card-illumination:hover {
   opacity: 100%; }
 
-.card-item--4:hover .card-modifier--1 {
+.card-illumination:hover .card-modifier--1 {
   opacity: 0;
   position: absolute;
   top: 1.8rem;
@@ -98,11 +100,11 @@ body {
   bottom: 1.8rem;
   z-index: 100; }
 
-.card-item--4:hover .card-modifier--2 {
+.card-illumination:hover .card-modifier--2 {
   opacity: 100%;
   z-index: 200; }
 
-.card-item--4:hover .card-modifier--3 {
+.card-illumination:hover .card-modifier--3 {
   display: block; }
 
 .card__time {
@@ -596,6 +598,7 @@ body {
     display: block;
     padding-left: 2.9rem;
     color: #282828;
+    font-family: inherit;
     font-size: 2.4rem;
     font-weight: 400;
     text-transform: capitalize;
